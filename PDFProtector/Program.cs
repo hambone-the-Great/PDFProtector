@@ -16,7 +16,7 @@ namespace PDFProtector
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PdfProtector());
+            Application.Run(new Main());
         }
     }
 }

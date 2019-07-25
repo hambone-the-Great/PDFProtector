@@ -1,6 +1,6 @@
 ﻿namespace PDFProtector
 {
-    partial class PdfProtector
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PdfProtector));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.label3 = new System.Windows.Forms.Label();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();

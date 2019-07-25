@@ -12,9 +12,9 @@ using System.Diagnostics;
 
 namespace PDFProtector
 {
-    public partial class PdfProtector : Form
+    public partial class Main : Form
     {
-        public PdfProtector()
+        public Main()
         {
             InitializeComponent();
             this.AllowDrop = true;
