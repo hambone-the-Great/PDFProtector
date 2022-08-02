@@ -45,7 +45,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(109, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(511, 22);
+            this.label3.Size = new System.Drawing.Size(662, 30);
             this.label3.TabIndex = 17;
             this.label3.Text = "Select or drag and drop a PDF file to password protect.";
             // 
@@ -74,7 +74,7 @@
             this.txtPassword2.Location = new System.Drawing.Point(198, 147);
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.PasswordChar = '*';
-            this.txtPassword2.Size = new System.Drawing.Size(358, 31);
+            this.txtPassword2.Size = new System.Drawing.Size(358, 37);
             this.txtPassword2.TabIndex = 14;
             // 
             // label2
@@ -83,7 +83,7 @@
             this.label2.Location = new System.Drawing.Point(15, 150);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 22);
+            this.label2.Size = new System.Drawing.Size(223, 30);
             this.label2.TabIndex = 13;
             this.label2.Text = "Repeat Password:";
             // 
@@ -92,7 +92,7 @@
             this.txtPassword1.Location = new System.Drawing.Point(198, 107);
             this.txtPassword1.Name = "txtPassword1";
             this.txtPassword1.PasswordChar = '*';
-            this.txtPassword1.Size = new System.Drawing.Size(358, 31);
+            this.txtPassword1.Size = new System.Drawing.Size(358, 37);
             this.txtPassword1.TabIndex = 12;
             // 
             // label1
@@ -101,7 +101,7 @@
             this.label1.Location = new System.Drawing.Point(89, 107);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 22);
+            this.label1.Size = new System.Drawing.Size(129, 30);
             this.label1.TabIndex = 11;
             this.label1.Text = "Password:";
             // 
@@ -109,7 +109,7 @@
             // 
             this.txtSelected.Location = new System.Drawing.Point(198, 61);
             this.txtSelected.Name = "txtSelected";
-            this.txtSelected.Size = new System.Drawing.Size(358, 31);
+            this.txtSelected.Size = new System.Drawing.Size(358, 37);
             this.txtSelected.TabIndex = 10;
             // 
             // lblFile
@@ -118,13 +118,13 @@
             this.lblFile.Location = new System.Drawing.Point(62, 65);
             this.lblFile.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblFile.Name = "lblFile";
-            this.lblFile.Size = new System.Drawing.Size(127, 22);
+            this.lblFile.Size = new System.Drawing.Size(173, 30);
             this.lblFile.TabIndex = 9;
             this.lblFile.Text = "Selected File:";
             // 
-            // PdfProtector
+            // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 227);
             this.Controls.Add(this.label3);
@@ -139,8 +139,9 @@
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "PdfProtector";
+            this.Name = "Main";
             this.Text = "PDF Protector";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
