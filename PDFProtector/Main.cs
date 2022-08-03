@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using PdfSharp;
 using System.Diagnostics;
 
+
 namespace PDFProtector
 {
     public partial class Main : Form
@@ -26,6 +27,13 @@ namespace PDFProtector
             btnSubmit.Enabled = false;
             this.AcceptButton = btnSubmit;
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
@@ -132,7 +140,7 @@ namespace PDFProtector
 
         private void btnBrowse_Click_1(object sender, EventArgs e)
         {
-            //https://msdn.microsoft.com/en-us/library/system.windows.forms.openfiledialog(v=vs.110).aspx 
+            ///// /*https://msdn.microsoft.com/en-us/library/system.windows.forms.openfiledialog(v=vs.110).aspx */
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "PDF Files (*.pdf)|*.pdf";
             ofd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyComputer);
@@ -146,13 +154,11 @@ namespace PDFProtector
                     txtPassword2.Enabled = true;
                     btnSubmit.Enabled = true;
                     txtPassword1.Focus();
+                    webview.Source = new Uri(txtSelected.Text); 
                 }
             }
         }
 
-        private void Main_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }
