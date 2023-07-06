@@ -40,10 +40,13 @@
             this.lblFile = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.webview = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.webview)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -179,9 +182,25 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.tableLayoutPanel1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.webview);
             this.splitContainer1.Size = new System.Drawing.Size(757, 733);
             this.splitContainer1.SplitterDistance = 229;
             this.splitContainer1.TabIndex = 19;
+            // 
+            // webview
+            // 
+            this.webview.AllowExternalDrop = true;
+            this.webview.CreationProperties = null;
+            this.webview.DefaultBackgroundColor = System.Drawing.Color.White;
+            this.webview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webview.Location = new System.Drawing.Point(0, 0);
+            this.webview.Name = "webview";
+            this.webview.Size = new System.Drawing.Size(757, 500);
+            this.webview.TabIndex = 0;
+            this.webview.ZoomFactor = 1D;
             // 
             // Main
             // 
@@ -198,8 +217,10 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.webview)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -217,6 +238,7 @@
         private System.Windows.Forms.Label lblFile;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webview;
     }
 }
 
